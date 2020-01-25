@@ -1,0 +1,24 @@
+
+.block {
+  height: 100px;
+  /* width: 100px; */
+  background: darkgreen;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  vertical-align: center;
+  outline: 2px solid #fff;
+  margin-bottom: 10px;
+}
+
+.inline-block {
+  height: 100px;
+  width: 100px;
+  background: #84cc18b2;
+  outline: 2px solid #fff;
+  text-align: center;
+}
+
+.inline {
+  color: red;
+}
