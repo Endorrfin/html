@@ -86,3 +86,15 @@ body {
   color: #fff;
   background: #00d;
 }
+
+
+.block5 {
+  height: 120px;
+  width: 120px;
+  background: brown;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  line-height: 120px;
+  margin-bottom: 5px;
+}
