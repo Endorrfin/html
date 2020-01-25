@@ -40,8 +40,8 @@ body {
 
 .block2 {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   background: #f5159f;
   text-transform: uppercase;
   color: #fff;
@@ -51,4 +51,38 @@ body {
   margin: 100px;
   border: white dotted 100px;
   padding: 100px;
+}
+
+
+.block3 {
+  /* display: block; */
+  height: 100px;
+  width: 100px;
+  background: darkgreen;
+  /* text-transform: uppercase; */
+  /* color: #fff; */
+  /* outline: 2px solid #d9ff00; */
+}
+
+.box{
+  color: #fff;
+  background: #00d;
+  width: 200px;
+
+}
+
+
+
+.block4 {
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background: darkgreen;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.box2{
+  color: #fff;
+  background: #00d;
 }
