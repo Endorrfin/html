@@ -88,6 +88,16 @@ body {
 }
 
 
+
+.wrapper {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+  vertical-align: top;
+  padding: 10px;
+  border: 1px solid transparent;
+}
+
 .block5 {
   height: 120px;
   width: 120px;
