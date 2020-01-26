@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: 'Raleway', 'Arial', serif;
   color: #6c7279;
@@ -5,13 +15,35 @@ body {
   line-height: 21px;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  /* background-color: teal; */
+}
+
 .page-header {
   background-color: #3a3e64;
 }
 
+/* SITE NAVIGATION */
 .site-navigation {
+  margin: 0;
+  padding: 0;
   font-size: 13px;
   list-style: none;
+}
+
+.site-navigation li {
+  display: inline-block;
+  /* margin-right: 60px; */
+}
+
+/* .site-navigation li:last-child {
+  margin-right: 0;
+} */
+
+.site-navigation li:not(:last-child) {
+  margin-right: 60px;
 }
 
 .site-navigation a {
