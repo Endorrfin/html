@@ -69,6 +69,7 @@ img {
 }
 
 .site-navigation a {
+  display: block;
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
@@ -128,15 +129,25 @@ img {
 
 
 /* TEAM SECTION */
+.team {
+  margin-bottom: 120px;
+}
+
 .team-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 0;
 }
 
 .team-list-item {
   display: inline-block;
-  width: 
+  width: 270px;
+  margin-right: 30px;
+}
+
+.team-list-item:last-child {
+  margin-right: 0;
 }
 
 .team-list-name {
@@ -149,6 +160,45 @@ img {
   font-size: 13px;
   line-height: 16px;
   color: #e84545;
+}
+
+.team-list-description {
+  font-size: 14px;
+}
+
+.team-list-socials {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+  font-size: 14px;
+}
+
+.team-list-socials li {
+  display: inline-block;
+}
+
+.team-list-socials a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(232, 236, 238);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.team-list-socials a:hover,
+.team-list-socials a:focus {
+  background-color: #e84545;
+}
+
+.icon-facebook {
+  background-image: url('../img/icon-facebook.png');
+}
+.icon-twitter {
+  background-image: url('../img/icon-twitter.png');
+}
+.icon-linkedin {
+  background-image: url('../img/icon-linkedin.png');
 }
 
 
@@ -164,6 +214,19 @@ img {
 .footer-socials-list li a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.download-button {
+  border: none;
+  margin: 0;
+  padding: 14px, 82px;
+  background-color: #e84545;
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 
