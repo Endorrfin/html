@@ -15,6 +15,12 @@ body {
   line-height: 21px;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -22,11 +28,26 @@ body {
 }
 
 .page-header {
+  margin-bottom: 120px;
   background-color: #3a3e64;
+}
+
+.page-nav {
+  padding: 38px 0;
+}
+
+.site-logo {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 /* SITE NAVIGATION */
 .site-navigation {
+  display: inline-block;
+  width: 977px;
+  /* background-color: teal; */
+  vertical-align: middle;
+  text-align: right;
   margin: 0;
   padding: 0;
   font-size: 13px;
@@ -35,6 +56,7 @@ body {
 
 .site-navigation li {
   display: inline-block;
+
   /* margin-right: 60px; */
 }
 
@@ -54,24 +76,67 @@ body {
   line-height: 16px;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #e84545;
 }
 
 
+/* FEATURES SECTION */
+.features {
+  margin-bottom: 120px;
+}
 
 .features-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.features-list-item {
+  width: 370px;
+  display: inline-block;
+  margin-bottom: 72px;
+  text-align: center;
+  padding: 0 38px;
+  /* margin-right: 30px;  */
+}
+
+/* .features-list-item:nth-child(3n) {
+  margin-right: 0;
+} */
+
+.features-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.features-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .features-list-item h3 {
+  margin-bottom: 24px;
   color: #2d3033;
   line-height: 17px;
+  font-size: 14px;
+}
+
+.features-list-item p {
+  font-size: 14px;
 }
 
 
+/* TEAM SECTION */
 .team-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-list-item {
+  display: inline-block;
+  width: 
 }
 
 .team-list-name {
