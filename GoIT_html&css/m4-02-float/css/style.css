@@ -1,0 +1,40 @@
+
+* {
+  outline: 1px solid #00aefd
+}
+
+body {
+  background-color: #ccc;
+  font-family: sans-serif;
+}
+
+/* FLOAT */
+
+.container {
+  padding: 20px;
+  background-color: #424242;
+}
+
+.red {
+  height: 60px;
+  width: 100px;
+  background-color: red;
+}
+
+.green {
+  height: 80px;
+  width: 120px;
+  background-color: green;
+}
+
+.blue {
+  height: 100px;
+  width: 140px;
+  background-color: cornflowerblue;
+}
+
+
+
+
+
+
