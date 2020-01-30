@@ -11,12 +11,13 @@ body {
 /* MENU */
 .page-header {
   outline: 2px solid brown;
+  padding: 20px;
 }
 
 .logo {
   outline: 2px solid orange;
   float: left;
-  height: 150px;
+  /* height: 150px; */
 }
 
 .menu {
@@ -32,6 +33,37 @@ body {
 }
 
 
+/* LIST  */
+.catalog {
+  width: 1000px;
+  margin: 0 auto;
+  /* margin-bottom: 500px; */
+}
+
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list-item {
+  float: left;
+  width: 300px;
+  outline: 1px solid #919090;
+}
+
+.catalog-list-item:not(:nth-child(3n)) {
+  margin-right: 50px;
+}
+
+.catalog-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 50px;
+}
+
+.catalog-text {
+  padding: 0 8px;
+}
+ 
 
 
 
@@ -81,7 +113,7 @@ body {
 }
 
 p {
-  background-color: grey;
+  background-color: #bdbbbb;
 }
 
 .post img {
