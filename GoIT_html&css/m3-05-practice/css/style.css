@@ -151,30 +151,42 @@ img {
 }
 
 .team-list-name {
+  margin-top: 26px;
+  margin-bottom: 10px;
   font-size: 22px;
   line-height: 26px;
   color: #2d3033;
 }
 
 .team-list-occupation {
+  margin-top: 0;
+  margin-bottom: 26px;
   font-size: 13px;
   line-height: 16px;
   color: #e84545;
+  text-transform: uppercase;
 }
 
 .team-list-description {
+  margin-bottom: 26px;
+  margin-top: 0;
   font-size: 14px;
 }
 
 .team-list-socials {
   margin: 0;
   padding: 0;
-  list-style: 0;
-  font-size: 14px;
+  list-style: none;
+  font-size: 0;
 }
 
 .team-list-socials li {
   display: inline-block;
+  margin-right: 4px;
+}
+
+.team-list-socials li:last-child {
+  margin-right: 0;
 }
 
 .team-list-socials a {

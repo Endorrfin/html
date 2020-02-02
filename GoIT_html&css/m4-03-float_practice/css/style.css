@@ -1,3 +1,22 @@
+/* visually-hidden helper */
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -21,6 +40,12 @@ img {
   height: auto;
 }
 
+.clearfix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -42,20 +67,18 @@ img {
 
 /* SITE NAVIGATION */
 .site-navigation {
-  display: inline-block;
-  width: 977px;
-  /* background-color: teal; */
-  vertical-align: middle;
-  text-align: right;
+  float: right;
+  width: 600px;
+  /* background-color: red; */
   margin: 0;
+  margin-top: 8px;
   padding: 0;
   font-size: 13px;
   list-style: none;
 }
 
 .site-navigation li {
-  display: inline-block;
-
+  float: left; 
   /* margin-right: 60px; */
 }
 
@@ -91,25 +114,54 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0;
 }
 
 .features-list-item {
+  float: left;
   width: 370px;
-  display: inline-block;
+  margin-right: 30px; 
   margin-bottom: 72px;
-  text-align: center;
   padding: 0 38px;
-  /* margin-right: 30px;  */
+  text-align: center;
 }
 
-/* .features-list-item:nth-child(3n) {
+.features-list-item::before {
+  content: "";
+  display: block;
+  height: 60px;
+  margin-bottom: 34px;
+  /* background-color: teal; */
+  background-image: url('../img/icons/features/icon-tools.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-tools::before {
+  background-image: url(../img//icons/features/icon-tools.png);
+}
+.icon-computer::before {
+  background-image: url(../img//icons/features/icon-computer.png);
+}
+.icon-bulb::before {
+  background-image: url(../img//icons/features/icon-bulb.png);
+}
+.icon-atom::before {
+  background-image: url(../img//icons/features/icon-atom.png);
+}
+.icon-case::before {
+  background-image: url(../img//icons/features/icon-case.png);
+}
+.icon-download::before {
+  background-image: url(../img//icons/features/icon-download.png);
+}
+
+.features-list-item:nth-child(3n) {
   margin-right: 0;
-} */
-
-.features-list-item:not(:nth-child(3n)) {
-  margin-right: 30px;
 }
+
+/* .features-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+} */
 
 .features-list-item:nth-last-child(-n + 3) {
   margin-bottom: 0;
@@ -136,11 +188,10 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-size: 0;
 }
 
 .team-list-item {
-  display: inline-block;
+  float: left;
   width: 270px;
   margin-right: 30px;
 }
@@ -150,15 +201,20 @@ img {
 }
 
 .team-list-name {
+  margin-top: 26px;
+  margin-bottom: 10px;
   font-size: 22px;
   line-height: 26px;
   color: #2d3033;
 }
 
 .team-list-occupation {
+  margin-top: 0;
+  margin-bottom: 26px;
   font-size: 13px;
   line-height: 16px;
   color: #e84545;
+  text-transform: uppercase;
 }
 
 .team-list-description {
@@ -168,12 +224,17 @@ img {
 .team-list-socials {
   margin: 0;
   padding: 0;
-  list-style: 0;
+  list-style: none;
   font-size: 14px;
 }
 
 .team-list-socials li {
-  display: inline-block;
+  float: left;
+  margin-right: 4px;
+}
+
+.team-list-socials li:last-child {
+  margin-right: 0;
 }
 
 .team-list-socials a {
@@ -191,17 +252,18 @@ img {
 }
 
 .icon-facebook {
-  background-image: url('../img/icon-facebook.png');
+  background-image: url('../img/icons/social/icon-facebook.png');
 }
 .icon-twitter {
-  background-image: url('../img/icon-twitter.png');
+  background-image: url('../img/icons/social/icon-twitter.png');
 }
 .icon-linkedin {
-  background-image: url('../img/icon-linkedin.png');
+  background-image: url('../img/icons/social/icon-linkedin.png');
 }
 
 
 
+/* FOOTER SECTION */
 .page-footer {
   background-color: #3a3e64;
 }
@@ -215,6 +277,8 @@ img {
   text-decoration: none;
 }
 
+
+
 .download-button {
   border: none;
   margin: 0;
@@ -226,26 +290,4 @@ img {
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-
-
-
-/* visually-hidden helper */
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
