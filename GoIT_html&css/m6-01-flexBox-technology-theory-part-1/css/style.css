@@ -35,18 +35,31 @@ img {
   /* justify-content: space-around; */
   /* align-items: stratch; */
   /* align-items: flex-start;  */
-  padding: 30px;
+  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  flex-wrap: inherit;
+  flex-wrap: initial;
+  flex-wrap: nowrap;
+  flex-wrap: unset;
+  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
+  padding: 70px;
   background-color: #212121;
-  height: 600px;
+  /* height: 600px; */
 }
 
 .flex-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100px;
   font-size: 40px;
   color: #fff;
   text-align: center;
-  line-height: 100px;
+  /* line-height: 100px; */
   width: 100px;
+  background-color: teal;
+  border: 1px solid #fff;
 }
 
 
