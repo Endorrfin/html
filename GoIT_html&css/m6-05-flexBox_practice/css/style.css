@@ -88,6 +88,7 @@ img {
   text-transform: uppercase;
   text-decoration: none;
   line-height: 16px;
+  transition: color 0.3s linear;
 }
 
 .site-navigation a:hover,
@@ -209,13 +210,17 @@ img {
   width: 270px;
   padding: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: transform 0.2s ease-in, 
+              box-shadow 0.3s linear;
 }
 .team-list-item:hover {
+  transform: scale(1.05);
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .team-list-image {
-  filter: grayscale(1)
+  filter: grayscale(1);
+  transition: filter 0.2s ease-out;
 }
 
 .team-list-item:hover .team-list-image {
@@ -266,11 +271,12 @@ img {
   border: 1px solid rgb(232, 236, 238);
   background-repeat: no-repeat;
   background-position: center;
+  transition: background-color 0.2s linear;
 }
 
 .team-list-socials a:hover,
 .team-list-socials a:focus {
-  background-color: #e84545;
+  background-color: #4267b2;
 }
 
 .icon-facebook {
