@@ -32,6 +32,7 @@ body {
   color: #6c7279;
   font-size: 14px;
   line-height: 21px;
+  /* background-color: #000000; */
 }
 
 img {
@@ -58,7 +59,10 @@ img {
 }
 
 .page-nav {
-  padding: 38px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
 }
 
 .site-logo {
@@ -67,28 +71,15 @@ img {
 
 /* SITE NAVIGATION */
 .site-navigation {
-  float: right;
+  display: flex;
+  justify-content: space-between;
   width: 600px;
-  /* background-color: red; */
   margin: 0;
-  margin-top: 8px;
   padding: 0;
   font-size: 13px;
   list-style: none;
 }
 
-.site-navigation li {
-  float: left; 
-  /* margin-right: 60px; */
-}
-
-/* .site-navigation li:last-child {
-  margin-right: 0;
-} */
-
-.site-navigation li:not(:last-child) {
-  margin-right: 60px;
-}
 
 .site-navigation a {
   display: block;
@@ -128,15 +119,20 @@ img {
 }
 
 .features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .features-list-item {
-  float: left;
+  /* flex-basis: 370px;
+  flex-grow: 0;
+  flex-shrink: 0; */
+  flex: 0 0 370px;
   width: 370px;
-  margin-right: 30px; 
   margin-bottom: 72px;
   padding: 0 38px;
   text-align: center;
@@ -202,24 +198,20 @@ img {
 }
 
 .team-list {
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .team-list-item {
-  float: left;
   width: 270px;
   padding: 10px;
-  margin-right: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .team-list-item:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.team-list-item:last-child {
-  margin-right: 0;
 }
 
 .team-list-image {
@@ -252,6 +244,7 @@ img {
 }
 
 .team-list-socials {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -259,7 +252,6 @@ img {
 }
 
 .team-list-socials li {
-  float: left;
   margin-right: 4px;
 }
 
@@ -295,7 +287,15 @@ img {
 
 /* FOOTER SECTION */
 .page-footer {
+  color: #fff;
   background-color: #3a3e64;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 246px;
+  align-items: center;
 }
 
 .footer-socials-list {
